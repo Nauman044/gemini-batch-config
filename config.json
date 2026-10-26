@@ -1,0 +1,37 @@
+{
+  "_comment": "Gemini Batch live config. Edit this file to fix the extension for all users without resending it. After editing, users get it next time they open the panel.",
+  "contact": "WhatsApp 0370-0684849",
+  "notice": "",
+  "selectors": {
+    "editor": "rich-textarea .ql-editor, rich-textarea [contenteditable=\"true\"]",
+    "sendBtn": "button[aria-label=\"Send message\"]",
+    "stopBtn": "button[aria-label*=\"Stop\" i]",
+    "chip": "uploader-file-preview, gem-media-attachment",
+    "chipCloseInside": "button[aria-label=\"close attachment\"]",
+    "imageFileInput": "uploader input[type=\"file\"][accept^=\"image\"], input[type=\"file\"][accept^=\"image\"]",
+    "uploadMenuBtn": "button[aria-label=\"Upload and tools\"]",
+    "toolMenuItems": ".cdk-overlay-container button, .cdk-overlay-container [role=\"menuitemcheckbox\"]",
+    "toolDeselect": "button[aria-label^=\"Deselect\"]",
+    "aspectBtn": "button[aria-label^=\"Aspect ratio\"]",
+    "aspectItems": ".cdk-overlay-container [role=\"menuitemradio\"]",
+    "userQuery": "user-query",
+    "modelResponse": "model-response",
+    "responseImg": "generated-image img, single-image img.image, .generated-images img",
+    "downloadBtn": "button[aria-label=\"Download full-sized image\"]",
+    "responseVideo": "generated-video video, video-player video, video",
+    "imageWrap": "single-image, generated-image",
+    "doneBtns": "button[aria-label=\"Good response\"], button[aria-label=\"Redo\"], button[aria-label=\"Show more options\"]"
+  },
+  "regex": {
+    "toolLabel.image": "^create image$",
+    "toolLabel.video": "^create video$"
+  },
+  "timings": {
+    "minResultSize": 200,
+    "uploadMaxMs": 60000,
+    "startMaxMs": 15000,
+    "stableMs": 3000,
+    "videoNoResultMs": 20000,
+    "pollMs": 1000
+  }
+}
